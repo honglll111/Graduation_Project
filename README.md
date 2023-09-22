@@ -20,7 +20,7 @@
 2) 배경 마스킹 사진
 3) 프롬프트 입력
 
-        ex) An oil painting of a boy in red coat, sat on a boulder, in a misty woodland clearing, campfire in background, warm fire glow, cosy fantasy art'
+        ex) An oil painting of a boy in red coat, sat on a boulder, in a misty woodland clearing, campfire in background, warm fire glow, cosy fantasy art
 
 ## 다음주차 계획
 - OpenAI key 발급 
