@@ -4,7 +4,7 @@
 
 ## 활동 내용
 1. 프롬프트 학습을 위한 자료 찾기
-   - 	Dalle 프롬프트 관련 책이 있을거라 생각했으나 없었음
+   - 	Dalle 프롬프트 관련 책이 있을거라 생각했으나 마땅한 책이 없었음
    - 	검색을 통해 ‘The DALL·E 2 Prompt Book’를 찾음
      
       https://dallery.gallery/wp-content/uploads/2022/07/The-DALL%C2%B7E-2-prompt-book-v1.02.pdf
