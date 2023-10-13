@@ -5,11 +5,11 @@
 ## 활동 내용
 1. 배경 부분 사진 오려내기
    
-- 갤러리 앱 편집기 -> 배경만 잘라내려면 실선 바깥에 있는 부분이 잘라져야 하는데 실선 안쪽 부분이 잘라짐
+- 갤러리 앱 편집기 -> 배경만 잘라내려면 실선 바깥에 있는 부분이 잘라져야 하는데 실선 안쪽 부분이 잘라짐(실패)
 
 ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/d81ed99e-6441-4cb5-86fd-c851129c10c2)
 
-   - https://ai-image-editor.netlify.app/ -> 마스킹 할 부분을 칠해서 배경만 잘라냄
+   - https://ai-image-editor.netlify.app/ -> 마스킹 할 부분을 칠해서 배경만 잘라냄(성공)
 
 ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/1556730a-42ae-4b91-9adc-f67edd134ea6)
 
