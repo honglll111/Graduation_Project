@@ -1,42 +1,27 @@
-# 3주차 진도보고서(정민서)
+# 4주차 진도보고서(정민서)
 ## 활동 주제
-OpenAI key 발급 & 프롬프트 코드 작성(Colab)
+코드 실행
 
 ## 활동 내용
-1. OpenAI key 발급 및 카드 등록
-
-2. 프롬프트 코드 작성(Colab)
+1. 배경 부분 사진 오려내기
    
-   OPenAI의 공식 문서를 참고하여 prompt engineering을 위한 코드 작성
+- 갤러리 앱 편집기 -> 배경만 잘라내려면 실선 바깥에 있는 부분이 잘라져야 하는데 실선 안쪽 부분이 잘라짐
+
+![image](https://github.com/honglll111/Graduation_Project/assets/87513761/d81ed99e-6441-4cb5-86fd-c851129c10c2)
+
+   - https://ai-image-editor.netlify.app/ -> 마스킹 할 부분을 칠해서 배경만 잘라냄
+
+![image](https://github.com/honglll111/Graduation_Project/assets/87513761/1556730a-42ae-4b91-9adc-f67edd134ea6)
+
+2. DALL·E 2 돌려보기
    
-   https://platform.openai.com/docs/guides/images/introduction
-
-         pip install openai
-         pip install --upgrade pip
-
-         import openai
-         import urllib.request
-         from PIL import Image
-
-         openai.api_key = "OpenAI_Key"
-         prompt1 = "Prompt_Content"
-
-         response = openai.Image.create_edit(
-         image=open('Original_Picture_Directory', 'rb'),
-         mask=open('Masking_Picture_Directory', 'rb'),
-         prompt=prompt1,
-         n=1,
-         size="1024x1024",
-         response_format='url'
-         )
-
-         image_url = response.data[0]['url']
-
-         urllib.request.urlretrieve(url=image_url, filename="gfg.png")
-         img = Image.open("gfg.png")
-         img.show()
+   - 지난 주에 작성한 코드에 원본과 배경을 잘라낸 사진을 넣고 프롬프트에 간단하게 "in desert" 작성
    
+   - 코드가 잘 돌아가는지 확인하기 위해 간단한 프롬프트 작성함
 
+   - 몇 가지 문제가 보여서 다음주에 프롬프트 구체화하여 돌려 코드를 실행할 예정
      
+![image](https://github.com/honglll111/Graduation_Project/assets/87513761/f95b2bc4-e461-49da-b369-9a7ab77ddbc7)
+
 ## 다음주차 계획
-- 프롬프트 엔지니어링
+- 프롬프트 정확도 향상
