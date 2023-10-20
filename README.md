@@ -1,27 +1,35 @@
-# 4주차 진도보고서(정민서)
+# 7주차 진도보고서(정민서)
 ## 활동 주제
-코드 실행
+모델 선정
 
 ## 활동 내용
-1. 배경 부분 사진 오려내기
+1. Image Segmentaion 모델 선정
    
-- 갤러리 앱 편집기 -> 배경만 잘라내려면 실선 바깥에 있는 부분이 잘라져야 하는데 실선 안쪽 부분이 잘라짐(실패)
-
-![image](https://github.com/honglll111/Graduation_Project/assets/87513761/d81ed99e-6441-4cb5-86fd-c851129c10c2)
-
-   - https://ai-image-editor.netlify.app/ -> 마스킹 할 부분을 칠해서 배경만 잘라냄(성공)
-
-![image](https://github.com/honglll111/Graduation_Project/assets/87513761/1556730a-42ae-4b91-9adc-f67edd134ea6)
-
-2. DALL·E 2 돌려보기
-   
-   - 지난 주에 작성한 코드에 원본과 배경을 잘라낸 사진을 넣고 프롬프트에 간단하게 "in desert" 작성
-   
-   - 코드가 잘 돌아가는지 확인하기 위해 간단한 프롬프트 작성함
-
-   - 몇 가지 문제가 보여서 다음주에 프롬프트 구체화하여 코드를 돌려볼 예정
+   * Grounded-SAM
      
-![image](https://github.com/honglll111/Graduation_Project/assets/87513761/f95b2bc4-e461-49da-b369-9a7ab77ddbc7)
+     -> GroundingDINO + Segment Anything(SAM)
+     
+     (1) GroundingDINO : 아래 사진처럼 키워드로 사물을 찾아주는 기술
+     
+     ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/0464e304-7bb3-4e52-bc7e-7100bb559ef9)
+ 
+     (2) Segment Anything(SAM): 사물의 바운더리를 표시해주는 기술
+     
+     ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/781401d5-800f-4e4d-b4c3-44db496e8f2d)
+
+     (3) Grounded-SAM: 키워드로 사물을 찾고, 바운더리 표시해주는 기술
+
+     ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/d2deb87d-5d72-4c83-9011-9e400da81579)
+
+2. GROUNED-SAM 코드 실행
+   
+   https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/automated-dataset-annotation-and-evaluation-with-grounding-dino-and-sam.ipynb
+
+   결과:
+   
+   ![image](https://github.com/honglll111/Graduation_Project/assets/87513761/7a10a3ee-c3b1-4d7c-966e-8217852b8f61)
+
+   **-> DALL·E 2 그림 그려질 부분이 잘려야 하는데 이 코드에는 그런 과정이 없음(추가 예정)**
 
 ## 다음주차 계획
-- 프롬프트 정확도 향상
+- Segment Anything 부분을 잘라낼 코드 추가 
